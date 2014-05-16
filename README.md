@@ -39,7 +39,10 @@ Docs
 
 VLL Pusher Dependecies
 =============================
+
 0) FloodLight Controller
+
+1) cURL
 
 Usage
 =====
