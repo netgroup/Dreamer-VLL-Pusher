@@ -98,11 +98,11 @@ def read_conf_file():
 		if aoshis[0] == aoshis[1] and aoshis[2] == aoshis[3]:
 			print "Discard Local Tunnel"
 		else: 
-			dpid = convert_name_to_dpid(aoshis[0])
+			dpid = aoshis[0]
 			port = (aoshis[2])
 			LHS_dpid.append(dpid)
 			LHS_port.append(port)
-			dpid = convert_name_to_dpid(aoshis[1])
+			dpid = aoshis[1]
 			port = (aoshis[3])
 			RHS_dpid.append(dpid)
 			RHS_port.append(port)
@@ -198,6 +198,7 @@ def add_command(args):
 		dstPort = RHS_port[i]
 		lhs_vid = LHS_vlan_tag[i]
 		rhs_vid = RHS_vlan_tag[i]
+		print "*** Generate Name From VLL (%s-%s-%s) - (%s-%s-%s)" % (srcSwitch, srcPort, lhs_vid, dstSwitch, dstPort, rhs_vid)
 		h.update(srcSwitch + "$" + srcPort + "$" + dstSwitch + "$" + dstPort + "$" + lhs_vid + "$" + rhs_vid)
 		# Generate the name		
 		digest = h.hexdigest()
