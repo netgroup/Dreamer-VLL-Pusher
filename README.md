@@ -25,43 +25,24 @@ Information can be found here:
 Tips
 ==============
 
-The Vll_Pusher Depends On vll_pusher.cfg. This File Should Be Created By The [x] Deployer
-(x = Mininet Deployer, TestBeds Deployer). You Can Create Manually Your CFG, But Be Careful. 
-
-The Vlls After An Execution Are Stored In The DB vlls.json
-
-For Now Its Execution Is One Shot
+The Vll_Pusher depends on vll_pusher.cfg (here you have to store the OSHI endpoints and the ports). The Vlls, after an execution are stored in the DB vlls.json, for now its execution is one shot.
 
 Docs
 ======
 
 [VLAN Tag Allocation](docs/vlan_tag_allocation.md)
 
+Tips
+==============
+
+See [Dreamer-VLL-Pusher How-To](http://netgroup.uniroma2.it/twiki/bin/view/Oshi/OshiExperimentsHowto#VllPusher)
+
 VLL Pusher Dependecies
 =============================
 
-0) FloodLight Controller
+0) FloodLight Controller [Floodlight Download Page](http://www.projectfloodlight.org/download/) (zip)
 
-1) cURL
-
-Usage
-=====
-
-./vll_pusher.py [-h] [--controller CONTROLLERRESTIP] [--add] [--delete]
-
-optional arguments:
-
-  -h, --help            show this help message and exit
-
-  --controller CONTROLLERRESTIP controller IP:RESTport
-
-		1) localhost:8080
-
-        2) A.B.C.D:8080
-
-  --add action: add
-
-  --delete action: delete
+1) cURL (apt)
 
 Todo
 =====

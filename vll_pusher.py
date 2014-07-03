@@ -515,13 +515,14 @@ def del_command(args):
 
 	print "*** Read Previous Vlls Inserted"
 	if os.path.exists('vlls.json'):
-    		vllsDb = open('vlls.json','r')
-    		lines = vllsDb.readlines()
-    		vllsDb.close()
+		vllsDb = open('vlls.json','r')
+		lines = vllsDb.readlines()
+		vllsDb.close()
 		vllsDb = open('vlls.json','w')
 	else:
-    		lines={}
+		lines={}
 		print "*** No Vlls Inserted"
+		return
 
 	# Removing previously created flow from switches
     	# using StaticFlowPusher rest API       
