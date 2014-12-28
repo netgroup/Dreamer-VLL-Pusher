@@ -298,7 +298,7 @@ def add_command(args):
 
 			index_rv_middle = randrange(len(routeDpid))
 			middlervDpid = parsedResult[index_rv_middle]['switch']
-			print "*** Reverse Path: %s - > %s -> %s" % (ingressDpid, middlervDpid, egressDpid);
+			print "*** Reverse Path: %s - > %s -> %s" % (egressDpid, middlervDpid, ingressDpid);
 		
 			labelrv1 = temp_sw_port_label[ingressDpid]
 			labelrv2 = get_vll_label_from_dpid(ingressDpid)

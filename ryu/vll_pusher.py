@@ -227,7 +227,7 @@ def add_command(args):
         ap2Port = None
 
         default = 16
-        max_value = 1048575
+        max_value = 131071
 
         if int(srcLabel) > max_value or int(dstLabel) > max_value:
 			print "Ingress or Egress Label Not Allowable"
@@ -263,10 +263,10 @@ def add_command(args):
         
         
         
-        print "*** Current Route Tag:"
+        print "*** Current Route Label:"
         print json.dumps(temp_sw_port_label, sort_keys=True, indent=4)
         print
-        print "*** Global Routes Tag:"
+        print "*** Global Routes Label:"
         print json.dumps(sw_port_label, sort_keys=True, indent=4)
         print             
         
@@ -543,8 +543,8 @@ def add_command(args):
         ap2Dpid = None
         ap2Port = None
 
-        default = 16
-        max_value = 1048575
+        default = 131072
+        max_value = 262143
 
         if int(srcLabel) > max_value or int(dstLabel) > max_value:
 			print "Ingress or Egress Label Not Allowable"
