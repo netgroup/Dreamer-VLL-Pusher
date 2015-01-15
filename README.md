@@ -11,7 +11,7 @@ Based On KcWang's CircuitPusher App
 
 Using This Tool You Can Deploy Virtual Leased Lines (VLLs) or Pseudo Wires (PWs) In An OSHI Network. 
 
-These services guarante to the served end-points to be directly interconnected as if they were in the same Ethernet LAN, see the documentation for more details.
+These services guarantee to the served end-points to be directly interconnected as if they were in the same Ethernet LAN, see the documentation for more details.
 
 License
 =======
@@ -26,7 +26,7 @@ Tips
 
 The vll_pusher.py script depends on vll_pusher.cfg (here you have to store the OSHI endpoints and the ports of the virtual circuits, see the demo file). The virtual circuits, after an execution, are stored in the DB vlls.json, for now its execution is one shot.
 
-There are two version of the script: 1) the first is for Floodlight 0.90 and leverages OpenFlow 1.0 capabilities in order to build the virtual circuits (in this case only the VLLs are created); 2) the second is for RYU controller and leverages OpenFlow 1.3 to build VLLs and PWs.
+There are two version of the script: 1) the first is for Floodlight 0.90 and leverages OpenFlow 1.0 capabilities in order to build the virtual circuits (in this case only the VLLs are created); 2) the second is for RYU controller and leverages OpenFlow 1.3 capabilities to build VLLs and PWs.
 
 Docs
 ======
@@ -45,7 +45,9 @@ VLL Pusher Dependecies
 
 1) RYU SDN Framework [RYU Download Page](http://osrg.github.io/ryu/) (pip)
 
-2) cURL (apt)
+2) RYU patch (see RYU folder)
+
+3) cURL (apt)
 
 3) siphash (pip)
 
