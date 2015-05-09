@@ -1,16 +1,16 @@
-![Alt text](../repo_data/dreamer-logo.png "Optional title")
+![OSHI and DREAMER logos](http://netgroup.uniroma2.it/twiki/pub/Oshi/WebHome/dreamer-oshi-logo-github-2.png "http://netgroup.uniroma2.it/OSHI")
 
-Label/Tag Allocation
+Label/Tag Allocation Tutorial
 ====================
 
-This Docs Try To Explain The Allocation And The Association
-Of The Tag/Label Hop By Hop. The Tag/Label Is Always Associated To
-The Destination Port. However There Are Some Special Case.
+This tutorial explains the allocation and the association
+of the Tag/Label hop-by-hop. The Tag/Label is always associated to
+the Destination Port. However there are some special cases.
 
-Path With One Hop
+Path with One Hop
 ========
 ![Alt text](onehop.png "Optional title")
 
-Path With More Than One Hop
+Path with more than One Hop
 =================
 ![Alt text](more_than_one_hop.png "Optional title")
