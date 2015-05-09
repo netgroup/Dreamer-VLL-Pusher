@@ -1,17 +1,20 @@
-![Alt text](repo_data/dreamer-logo.png "Optional title")
+![OSHI and DREAMER logos](http://netgroup.uniroma2.it/twiki/pub/Oshi/WebHome/dreamer-oshi-logo-github-2.png "http://netgroup.uniroma2.it/OSHI")
 
 Dreamer-VLL-Pusher
 ==================
 
-Virtual Leased Line Pusher - Dreamer Project (GÉANT Open Call)
+Virtual Leased Line Pusher 
 
 For Floodlight OpenFlow Controller and RYU SDN Framework
 
 Based On KcWang's CircuitPusher App
 
-Using This Tool You Can Deploy Virtual Leased Lines (VLLs) or Pseudo Wires (PWs) In An OSHI Network. 
+Using This Tool You Can Deploy Virtual Leased Lines (VLLs) or Pseudo Wires (PWs) in an OSHI Network. 
 
-These services guarantee to the served end-points to be directly interconnected as if they were in the same Ethernet LAN, see the documentation for more details.
+These services guarantee to the served end-points to be directly interconnected as if they were in the same Ethernet LAN.
+
+This a result of the [DREAMER project](http://netgroup.uniroma2.it/DREAMER/).  
+Addtional documentation is available at http://netgroup.uniroma2.it/OSHI/ .
 
 License
 =======
